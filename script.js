@@ -1,0 +1,1 @@
+document.getElementById('upload').addEventListener('change', function(e){const preview=document.getElementById('preview');preview.innerHTML='';Array.from(e.target.files).forEach(file=>{const img=document.createElement('img');img.src=URL.createObjectURL(file);img.style.width='150px';img.style.margin='10px';preview.appendChild(img);});});
